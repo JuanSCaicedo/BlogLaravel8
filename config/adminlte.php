@@ -325,7 +325,7 @@ return [
             'text' => 'Usuarios',
             'route' => 'admin.users.index',
             'icon' => 'fas fa-users fa-fw',
-            'can' => 'admin.users.index'
+            'can' => 'admin.roles.index'
         ],
         [
             'text' => 'Lista de roles',

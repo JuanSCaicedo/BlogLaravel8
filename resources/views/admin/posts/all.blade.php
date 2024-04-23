@@ -6,7 +6,7 @@
 
     <a class="btn btn-secondary btn-sm float-right" href="{{ route('admin.posts.create') }}">Nuevo post</a>
 
-    <h1>Listado de posts</h1>
+    <h1>Listado de todos los posts</h1>
 @stop
 
 @section('content')
@@ -19,7 +19,7 @@
         </div>
     @endif
 
-    @livewire('admin.posts-index')
+    @livewire('admin.post-all')
 @stop
 
 @section('css')

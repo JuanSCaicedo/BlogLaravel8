@@ -1,22 +1,30 @@
 @extends('adminlte::page')
 
-@section('title', 'Coders Free')
+@section('title', 'JuanDevops')
 
 @section('content_header')
     <h1>Crear nuevo rol</h1>
 @stop
 
 @section('content')
+
+    @if (session('info'))
+        <div class="alert alert-success">
+            <strong>
+                {{ session('info') }}
+            </strong>
+        </div>
+    @endif
+    
     <div class="card">
         <div class="card-body">
-            {!! Form::open(['route'=>'admin.roles.store']) !!}
+            <form action="{{ route('admin.roles.store') }}" method="POST">
+                @csrf
 
-           @include('admin.roles.partials.form')
+                @include('admin.roles.partials.form')
 
-            {!! Form::submit('Crear rol',['class'=>'btn btn-primary']) !!}
-
-            {!! Form::close() !!}
+                <input type="submit" class="btn btn-primary" value="Crear rol">
+            </form>
         </div>
     </div>
 @stop
-

@@ -12,14 +12,14 @@ class UserSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         User::create([
-            'name' =>'Earvin Saúl Pérez Ramos',
-            'email' => 'earhackerdem@gmail.com',
+            'name' => 'Juan Caicedo M',
+            'email' => 'juan@juandevops.com',
             'password' => bcrypt('12345678')
         ])->assignRole('Admin');
 
-        User::factory(99)->create();
+        User::factory(9)->create();
     }
 }

@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Coders Free')
+@section('title', 'JuanDevops')
 
 @section('content_header')
     <h1>Mostrar rol</h1>
@@ -11,9 +11,10 @@
 @stop
 
 @section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
+    {{-- Add here extra stylesheets --}}
+    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
 @stop
 
 @section('js')
-    <script> console.log('Hi!'); </script>
+    <script> console.log("Hi, I'm using the Laravel-AdminLTE package!"); </script>
 @stop

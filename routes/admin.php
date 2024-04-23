@@ -15,3 +15,4 @@ Route::resource('tags', TagController::class)->except('show')->names('admin.tags
 
 Route::resource('posts', PostController::class)->except('show')->names('admin.posts');
 
+Route::get('posts/all', [PostController::class, 'all'])->middleware('role:Admin')->name('admin.posts.all');

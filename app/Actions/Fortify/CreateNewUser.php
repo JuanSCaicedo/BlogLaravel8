@@ -27,10 +27,18 @@ class CreateNewUser implements CreatesNewUsers
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['required', 'accepted'] : '',
         ])->validate();
 
-        return User::create([
+        $user = User::create([
             'name' => $input['name'],
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
         ]);
+
+        // Asignar el rol 'Blogger' al usuario recién creado
+        $user->assignRole('Blogger');
+
+        // Asignar el rol 'Publish' al usuario recién creado
+        $user->assignRole('Publish');
+
+        return $user;
     }
 }

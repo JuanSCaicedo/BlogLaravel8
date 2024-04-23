@@ -35,7 +35,10 @@ class UserController extends Controller
     public function edit(User $user)
     {
         $roles = Role::all();
-        return view('admin.users.edit',compact('user','roles'));
+
+        $selectedRoles = $user->roles->pluck('id')->toArray(); // Obtener los ID de las etiquetas del post
+
+        return view('admin.users.edit', compact('user', 'roles', 'selectedRoles'));
     }
 
     /**

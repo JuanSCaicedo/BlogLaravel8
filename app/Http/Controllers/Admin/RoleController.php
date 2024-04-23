@@ -80,7 +80,9 @@ class RoleController extends Controller
     public function edit(Role $role)
     {
         $permissions = Permission::all();
+
         $selectedPermissions = $role->permissions->pluck('id')->toArray(); // Obtener los ID de las etiquetas del post
+
         return view('admin.roles.edit', compact('role', 'permissions', 'selectedPermissions'));
     }
 

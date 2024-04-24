@@ -17,6 +17,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
+    <!-- incono -->
+    <link rel="icon" href="../build/img/favicon.webp">
+    <link rel="icon" href="../build/img/favicon.png">
+
     @livewireStyles
 
     <!-- Scripts -->

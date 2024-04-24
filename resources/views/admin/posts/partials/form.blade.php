@@ -116,9 +116,9 @@
             <small class="text-danger">{{ $message }}</small>
         @enderror
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus amet quod dignissimos maiores quas, iusto
-            explicabo sed officia aperiam! Nam perspiciatis harum cum magni distinctio recusandae delectus eius magnam
-            suscipit.</p>
+        <p class="py-4">
+            "La imagen a subir no debe ser mayor a 2MB"
+        </p>
     </div>
 </div>
 

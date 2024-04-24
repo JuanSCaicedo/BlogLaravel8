@@ -28,6 +28,10 @@
                     {!! $post->body !!}
                 </div>
 
+                <div class="text-sm font-bold text-gray-500 mt-4">
+                    <span>Author: </span> {!! $post->user->name !!}
+                </div>
+
             </div>
 
             {{-- contenido relacionado --}}

@@ -19,6 +19,7 @@
         "laravel/tinker": "^2.5",
         "laravelcollective/html": "^6.2",
         "livewire/livewire": "^2.0",
+        "nesbot/carbon": "^2.72.6",
         "spatie/laravel-permission": "^4.0"
     },
     "require-dev": {

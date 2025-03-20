@@ -1,0 +1,16 @@
+### Rewrite Rules Added by CyberPanel Rewrite Rule Generator
+
+RewriteEngine On
+RewriteCond %{HTTPS}  !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+### End CyberPanel Generated Rules.
+DirectoryIndex index.php
+
+RewriteEngine On
+
+RewriteRule ^$ public/index.php [L]
+
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+
+cat: /home/blog.juandevops.com/public_html/.htaccess: No such file or directory
